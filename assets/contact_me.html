@@ -1,0 +1,69 @@
+   <!-------------------- Contact Area (Start) -------------------->
+   <section class="contact" id="contact">
+
+    <div class="heading">
+        <h2><span>contact</span> me</h2>
+    </div>
+
+    <div class="box-container">
+
+        <div class="contact-info">
+
+            <h3>Let's Get in Touch!</h3>
+
+            <p>Quickest ways to get in touch:</p>
+
+
+            <div class="info-item">
+                <h4>for inquiries:</h4>
+                <div class="detail">
+                  <div class="fas fa-envelope"></div>
+                  <p class="gmail"><a href="mailto:marlenariellee@gmail.com">marlenariellee@gmail.com</a></p>
+                </div>
+              
+              <div class="info-item">
+                <h4>linkedin:</h4>
+                <div class="detail">
+                  <div class="fab fa-linkedin"></div>
+                  <p class="linkedin"><a href="https://www.linkedin.com/in/marlenariellee/">linkedin.com/in/marlenariellee</a></p>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="contact-panel">
+                <h3 class="contact-heading">Send me a message</h3>
+              
+                <form id="contactUs-Form" action="https://formspree.io/f/xeorrwan" method="POST" novalidate>
+                  <div class="contact-grid">
+                    <label class="sr-only" for="name">Your Name</label>
+                    <input id="name" type="text" name="name" placeholder="Your Name">
+              
+                    <label class="sr-only" for="email">Your Email</label>
+                    <input id="email" type="email" name="email" placeholder="Your Email" required>
+              
+                    <label class="sr-only" for="subject">Subject</label>
+                    <input id="subject" type="text" name="subject" placeholder="Subject">
+              
+                    <label class="sr-only" for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+              
+                    <!-- honeypot (spam) -->
+                    <input type="text" name="_gotcha" style="display:none">
+                    <!-- optional redirect -->
+                    <input type="hidden" name="_next" value="https://themarlenariellee.com/thank-you.html">
+                  </div>
+              
+                  <div class="contact-actions">
+                    <button id="submit" type="submit" class="btn btn-large">Submit</button>
+                    <p id="msg" class="form-msg" role="status" aria-live="polite"></p>
+                  </div>
+                </form>
+              </div>
+              
+          
+        
+    </div>
+
+</section>
+<!-------------------- Contact Area (End) -------------------->
