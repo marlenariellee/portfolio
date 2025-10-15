@@ -984,198 +984,36 @@ header #menu-btn:hover{
 
 
 /*--------------------- 11- Contact Area CSS (Start) ---------------------*/
-.contact .alert{
-    font-size: 2rem;
-    color: var(--purple);
-    border-radius: 0.5rem;
-    padding-left: 1rem;
-}
-
-.contact .box-container{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.contact-info{
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 42rem;
-        flex: 1 1 42rem;
-}
-
-.contact-info h3{
-    font-size: 3rem;
-    color: var(--white);
-}
-
-.contact-info > p{
-    font-size: 1.6rem;
-    color: var(--grey);
-    padding: 0.5rem 0;
-}
-
-.contact-info .info-item{
-    padding: 1rem 0;
-}
-
-.contact-info .info-item .gmail,
-.contact-info .info-item .linkedin,
-.contact-info .info-item .github{
-    text-transform: none;
-}
-
-.contact-info .info-item h4{
-    font-size: 1.8rem;
-    color: var(--white);
-}
-
-.contact-info .info-item .detail{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.contact-info .info-item .detail .fas,
-.contact-info .info-item .detail .fab{
-    border-radius: 50%;
-    color: var(--purple);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font-size: 1.5rem;
-}
-
-.contact-info .info-item .detail p{
-    font-size: 1.6rem;
-    color: var(--grey);
-    line-height: 1.6;
-    padding-left: 1rem;
-}
-
-.contact-form{
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 42rem;
-        flex: 1 1 42rem;
-}
-
-.contact-form .box{
-    width: 100%;
-    text-transform: none;
-    color: var(--white);
-    font-size: 1.6rem;
-    border: 0.2rem solid #000000;
-    padding: 1.5rem;
-    margin: 0.5rem 0;
-    background-color: #F0EAD2 ;
-}
-
-.contact-form .box:focus{
-    border-color: var(--white);
-}
-
-.contact-form .box::placeholder{
-    color: var(--white);
-}
-
-.contact-form textarea{
-    height: 15rem;
-    resize: none;
-}
-
-.contact-form .btn{
-    margin-top: 1rem;
-}
-/* ---- CONTACT PANEL (big + algae) ---- */
-.contact-panel{
-    max-width: 980px;
-    margin: 24px auto 0;
-    background: #9ac27a1a;               /* algae tint */
-    border: 1.5px solid rgba(154,194,122,.55);
-    border-radius: 16px;
-    padding: 22px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.18);
+/* Floating waving-hand button */
+.tally-hand{
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 56px; height: 56px;
+    border-radius: 9999px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 6px 16px rgba(0,0,0,.15);
+    font-size: 28px; line-height: 56px; text-align: center;
+    cursor: pointer; z-index: 9999;
+    transition: transform .15s ease;
+    transform-origin: 70% 70%;
+    animation: hand-wave 2.5s infinite;
+  }
+  .tally-hand:hover { transform: translateY(-1px); }
+  
+  @keyframes hand-wave{
+    0%{transform: rotate(0)}
+    15%{transform: rotate(18deg)}
+    30%{transform: rotate(-8deg)}
+    45%{transform: rotate(12deg)}
+    60%{transform: rotate(-4deg)}
+    75%{transform: rotate(4deg)}
+    100%{transform: rotate(0)}
   }
   
-  .contact-heading{
-    margin: 0 0 12px;
-    font-size: 1.4rem;
-    letter-spacing: .02em;
-  }
-  
-  .contact-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-  }
-  
-  /* full-width textarea spans both columns */
-  .contact-grid textarea{
-    grid-column: 1 / -1;
-    min-height: 160px;
-    resize: vertical;
-  }
-  
-  .contact-grid input,
-  .contact-grid textarea{
-    width: 100%;
-    padding: 14px 16px;
-    font-size: 1rem;
-    color: #0f120c;
-    background: #ffffff;
-    border: 1.5px solid #2d3526;         /* dark olive border for contrast */
-    border-radius: 12px;
-    outline: none;
-  }
-  
-  .contact-grid input:focus,
-  .contact-grid textarea:focus{
-    border-color: #9ac27a;               /* algae focus */
-    box-shadow: 0 0 0 3px rgba(154,194,122,.25);
-  }
-  
-  .contact-actions{
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 14px;
-  }
-  
-  .btn.btn-large{
-    padding: 14px 20px;
-    font-size: 1.05rem;
-    border-radius: 12px;
-  }
-  
-  /* subtle success/error text */
-  .form-msg{
-    margin: 0;
-    color: #114b2a;                       /* deep green */
-    font-weight: 600;
-  }
-  
-  /* hide-only labels for a11y */
-  .sr-only{
-    position: absolute; width: 1px; height: 1px;
-    padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;
-  }
+  /* If you have a scroll-to-top button bottom-right, nudge it up a bit */
+  .scroll-top { bottom: 96px; }  /* optional */
   
 /*--------------------- 11- Contact Area CSS (End) ---------------------*/
 
