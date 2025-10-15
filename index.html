@@ -22,6 +22,25 @@
     <link rel="stylesheet"  href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
+    <!-- Javascript for Contact Us Form -->
+   <!-- Tally popup config -->
+    <script>
+        window.TallyConfig = {
+        formId: "w78Xla",
+        popup: {
+            emoji: { text: "👋", animation: "wave" },  // the waving hand button
+            overlay: true,                              // dim background on open
+            autoClose: 0,                               // stay open until closed
+            formEventsForwarding: true,
+            open: { trigger: "time", ms: 30000 },       // auto-open after 30s
+            showOnce: true,                              // don't re-open again this visit
+            doNotShowAfterSubmit: true                   // never auto-open after they submit
+        }
+        };
+    </script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+  
+        
 </head>
 
 <!-- Google analytics tag (gtag.js) -->
@@ -50,7 +69,7 @@
 
         <!-- Logo -->
         <a class="logo" href="#home">
-            <h2> XO, MARLENARIELLEE </h2> 
+            <h2> MARLENARIELLEE </h2> 
             <!-- <img src="assets/images/logo/marlenariellelogo.png" alt="logo" -->
         </a>
         <!-- Logo End -->
@@ -61,7 +80,8 @@
             <a href="#service">services</a>
             <a href="#blog">soft hustle</a>
              <a href="assets/about_me.html">about</a>
-            <a href="assets/contact_me.html">contact</a>
+             <a href="#tally-open=w78Xla" data-tally-layout="modal">contact</a>
+
         </nav>
 
         <!-- Menubar -->
@@ -545,37 +565,6 @@
             loop: true
         });
     </script>
-
-    <!-- Contact-Form Script -->
-    <script>
-        (() => {
-          const form = document.getElementById('contactUs-Form');
-          const submit = document.getElementById('submit');
-          const msg = document.getElementById('msg');
-      
-          form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            msg.textContent = '';
-            submit.disabled = true;
-            submit.textContent = 'Please wait…';
-      
-            try{
-              const res = await fetch(form.action, { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(form) });
-              if(res.ok){ msg.textContent = 'Thanks! Your message was sent.'; form.reset(); }
-              else{
-                const data = await res.json().catch(()=> ({}));
-                msg.textContent = (data.errors?.length) ? data.errors.map(e => e.message).join(', ')
-                  : 'Oops—something went wrong. You can also email me at marlenariellee@gmail.com.';
-              }
-            }catch{
-              msg.textContent = 'Network error. Please email me at marlenariellee@gmail.com.';
-            }finally{
-              submit.disabled = false;
-              submit.textContent = 'Submit';
-            }
-          });
-        })();
-      </script>
       
 </body>
 </html>
