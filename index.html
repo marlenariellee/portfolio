@@ -23,22 +23,46 @@
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
     <!-- Javascript for Contact Us Form -->
-   <!-- Tally popup config -->
-    <script>
-        window.TallyConfig = {
-        formId: "w78Xla",
-        popup: {
-            emoji: { text: "👋", animation: "wave" },  // the waving hand button
-            overlay: true,                              // dim background on open
-            autoClose: 0,                               // stay open until closed
-            formEventsForwarding: true,
-            open: { trigger: "time", ms: 15000 },       // auto-open after 30s
-            showOnce: true,                              // don't re-open again this visit
-            doNotShowAfterSubmit: true                   // never auto-open after they submit
-        }
-        };
-    </script>
+    <!-- Tally widget -->
     <script async src="https://tally.so/widgets/embed.js"></script>
+
+    <script>
+    const FORM_ID = 'w78Xla';
+
+    // Open the Tally modal (no redirect)
+    function openTallyPopup() {
+        if (!window.Tally || !window.Tally.openPopup) return;
+        window.Tally.openPopup(FORM_ID, {
+        layout: 'modal',
+        overlay: true,
+        autoClose: 0,
+        showOnce: true,            // only once per visit
+        doNotShowAfterSubmit: true // never auto-open after they already submitted
+        });
+    }
+
+    // Wait for Tally to load, then schedule the 10s auto-open
+    function waitForTally(cb) {
+        if (window.Tally && window.Tally.openPopup) return cb();
+        const iv = setInterval(() => {
+        if (window.Tally && window.Tally.openPopup) { clearInterval(iv); cb(); }
+        }, 100);
+        setTimeout(() => clearInterval(iv), 5000); // stop trying after 5s
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        if (!sessionStorage.getItem('tally_autopopup_shown')) {
+        setTimeout(() => {
+            waitForTally(() => {
+            openTallyPopup();
+            sessionStorage.setItem('tally_autopopup_shown', '1');
+            });
+        }, 10000); // 60,000 ms = 60s
+        }
+    });
+    </script>
+
+      
   
         
 </head>
@@ -565,6 +589,16 @@
             loop: true
         });
     </script>
-      
+   
+   <!-- waving hand contact form button -->
+   <button id="tally-hand" class="tally-hand" aria-label="Open services form">👋</button>
+
+    <script>
+    // Clicking the hand goes straight to the full-page form
+    document.getElementById('tally-hand').addEventListener('click', () => {
+        window.location.href = 'https://tally.so/r/w78Xla';
+    });
+    </script>
+
 </body>
 </html>
