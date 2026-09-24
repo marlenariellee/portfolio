@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> HappierMe — Marlena Branham</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/portfolio-additions.css">
+    <meta name="description"
+        content="HappierMe: the company context, my role, research and decisions, original project work, and results.">
+    <meta name="theme-color" content="#fbfbfb">
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <meta property="og:title" content="Evaluating the HappierMe mobile experience — Marlena Branham">
+    <meta property="og:description"
+        content="HappierMe: the company context, my role, research and decisions, original project work, and results.">
+    <meta property="og:type" content="website">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="nav">
+        <div class="nav__inner">
+            <a class="nav__brand" href="../index.html">Marlena Branham</a><button class="nav__toggle" data-nav-toggle
+                aria-expanded="false" aria-controls="primary-navigation" type="button">Menu</button>
+            <div class="nav__links" data-nav-links id="primary-navigation">
+                <a class="" href="../index.html">Home</a><a class="active" href="../work.html"
+                    aria-current="page">Work</a><a class="" href="../writing.html">Blog</a><a class=""
+                    href="../about.html">About</a>
+                <<div class="resume-actions" role="group" aria-label="Choose a résumé">
+                    <a class="nav__resume" href="../assets/Marlena-Branham-Resume.pdf" target="_blank" rel="noopener"
+                        aria-label="View Project and Program Management résumé, PDF, opens in a new tab">Project /
+                        Program résumé</a>
+                    <a class="nav__resume nav__resume--ux" href="../assets/Marlena-Branham-UX-Resume.pdf"
+                        target="_blank" rel="noopener"
+                        aria-label="View UX Research and Design résumé, PDF, opens in a new tab">UX Research / Design
+                        résumé</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <main id="main" class="case-wrap">
+        <section class="case-hero" id="case-top"><span class="case-hero__type">UX Research + Design · Usability
+                Evaluation</span>
+            <h1>HappierMe (UX)</h1>
+            <p class="case-hero__summary">I evaluated a mental-health mobile app using multiple research methods rather
+                than relying on one source of evidence. The study combined interaction mapping, five user interviews,
+                personas, competitive analysis, Nielsen heuristic evaluation, and usability testing with five first-time
+                users.</p>
+            <p class="case-reading">5 min read · Click-through presentations</p>
+        </section>
+        <section class="case-stats">
+            <div class="case-stat">
+                <b>Role</b><span>UX Research &amp; Design Consultant (graduate project)</span>
+            </div>
+            <div class="case-stat">
+                <b>Timeline</b><span>Jan – May 2024</span>
+            </div>
+            <div class="case-stat">
+                <b>Team / setting</b><span>Graduate project</span>
+            </div>
+            <div class="case-stat">
+                <b>Methods / tools</b><span>Interviews · personas · competitive analysis · heuristic
+                    evaluation · usability testing</span>
+            </div>
+        </section>
+        <div class="result-strip">
+            <div><strong>5</strong><span>first-time usability participants</span></div>
+            <div><strong>4 of 5</strong><span>confused by the opening screen</span></div>
+            <div><strong>5 of 5</strong><span>expected app-wide search</span></div>
+        </div>
+        <nav aria-label="Case study sections" class="case-contents"><span>In this case study</span>
+            <div class="case-contents__links"><a href="#overview">Company &amp; role</a><a href="#challenge">The
+                    challenge</a><a href="#process">My process</a><a href="#findings">Key decisions</a><a
+                    href="#project-work">Explore the work</a><a href="#results">Results</a><a
+                    href="#reflection">Reflections</a></div>
+        </nav>
+        <figure class="artifact artifact--hero"><a href="../assets/work/happierme-map-1.webp" data-lightbox
+                data-caption="Original HappierMe interaction map documenting the product’s navigation and screens."
+                aria-label="Enlarge: Original HappierMe interaction map documenting the product’s navigation and screens."><img
+                    src="../assets/work/happierme-map-1.webp"
+                    alt="Original HappierMe interaction map documenting the product’s navigation and screens."
+                    loading="eager" decoding="async" width="567" height="353"><span class="zoom-cue"
+                    aria-hidden="true">↗</span></a>
+            <figcaption>Original HappierMe interaction map documenting the product’s navigation and screens.
+            </figcaption>
+        </figure>
+        <section id="overview" class="case-section"><span class="case-section__label">01 / Context</span>
+            <h2>About HappierMe</h2>
+            <p>HappierMe, developed by Human Wisdom, is a mental-wellness and personal-development app. The experience
+                studied in 2024 brought together topic-based learning, daily practices, journaling, a discussion forum,
+                coaching, and events. Its breadth created several possible ways to get help, but it also made navigation
+                an important part of the product experience.</p>
+            <p>Our graduate research asked how first-time users understood that experience. Could they find a relevant
+                starting point, move between activities, and complete the actions that the client considered important?
+                The goal was to identify concrete usability barriers and turn the findings into recommendations the
+                product team could use.</p>
+            <div class="case-role">
+                <h3>My role and contribution</h3>
+                <p>I contributed as a UX researcher and designer within a University of Michigan graduate team. The
+                    broader evaluation included interaction mapping, user interviews, personas, competitive analysis,
+                    Nielsen heuristic evaluation, and first-time-user usability testing.</p>
+                <p>For the usability study, I moderated one of the five participant sessions and contributed to the
+                    team’s analysis and recommendations. My later HappierMe internship built on this product
+                    familiarity, but it was a separate phase of work. I distinguish the graduate evaluation from the
+                    subsequent feature and marketing work throughout this case study.</p>
+            </div>
+        </section>
+        <section id="challenge" class="case-section"><span class="case-section__label">02 / The problem</span>
+            <h2>What needed to change</h2>
+            <p>An app that supports reflection should help people understand what to do next. Our testing revealed
+                moments where participants had to work out the interface before they could reach the activity they
+                wanted. Opening prompts, topic selection, search, and menu contents did not always match their
+                expectations.</p>
+            <p>The design challenge was to make the product’s existing value easier to reach. We focused on clearer
+                starting points, more predictable navigation, and shorter routes through the core activities rather than
+                proposing additional content as the first solution.</p>
+            <div class="case-audiences">
+                <article>
+                    <h3>First-time users</h3>
+                    <p>The intended study population was ages 17–44; all participants were new to HappierMe.</p>
+                </article>
+                <article>
+                    <h3>Returning users</h3>
+                    <p>People using daily practice and journaling needed repeatable paths back to familiar activities.
+                    </p>
+                </article>
+                <article>
+                    <h3>Product stakeholders</h3>
+                    <p>The client needed findings tied to specific screens, task failures, and actionable
+                        recommendations.</p>
+                </article>
+            </div>
+        </section>
+        <section id="process" class="case-section"><span class="case-section__label">03 / Approach</span>
+            <h2>How I approached the work</h2>
+            <article class="case-method"><span class="case-method__number">01</span>
+                <div>
+                    <h3>Build a picture of the whole experience</h3>
+                    <p>Interaction mapping documented how the product’s screens and navigation connected. Interviews,
+                        persona work, competitor review, and heuristic evaluation provided complementary perspectives on
+                        user needs and interface conventions.</p>
+                    <p>Using several methods helped us compare what the interface appeared to support with what people
+                        actually understood when they used it. The interaction map remains useful evidence of the app’s
+                        breadth and the number of routes a new user had to interpret.</p>
+                </div>
+            </article>
+            <article class="case-method"><span class="case-method__number">02</span>
+                <div>
+                    <h3>Test realistic tasks with first-time users</h3>
+                    <p>The team recruited five people with no prior HappierMe experience and piloted the test before the
+                        final sessions. After the pilot, task wording was made more direct. Tasks covered daily
+                        practice, changing a topic pathway, contacting a coach, writing a journal entry, posting to the
+                        forum, and finding an event.</p>
+                    <p>Sessions used Zoom recording and phone screen sharing. A moderator guided each participant while
+                        the team logged observations and tracked time. I moderated one session. Debrief questions
+                        explored participants’ impressions, navigation difficulties, and whether they could imagine
+                        returning to the app.</p>
+                </div>
+            </article>
+            <article class="case-method"><span class="case-method__number">03</span>
+                <div>
+                    <h3>Look for repeated mismatches between expectation and behavior</h3>
+                    <p>Four of five participants were confused by the initial “continue where you left off” and “select
+                        a new topic” choices. They preferred a recognizable Home screen as an anchor. All five opened
+                        the hamburger menu expecting navigation or settings, but encountered content such as events and
+                        testimonials.</p>
+                    <p>All five also expected the search bar to search the full app, including events and the happiness
+                        survey. Its narrower topic search did not match that expectation. These repeated patterns made
+                        navigation and search priorities for the recommendations.</p>
+                </div>
+            </article>
+            <article class="case-method"><span class="case-method__number">04</span>
+                <div>
+                    <h3>Connect task friction to specific changes</h3>
+                    <p>Participants noticed larger actions more easily than smaller pathways such as Events. One of five
+                        attempted to register for an event that had already passed. On the forum, all five completed a
+                        post without selecting a topic; two of five described guided journaling as lengthy.</p>
+                    <p>We recommended a default Home screen, clearer topic labels, app-wide search, more prominent
+                        important actions, a better-organized menu, explicit forum topic selection, and fewer journaling
+                        prompts. Preserving journal responses would also make it easier to return to an unfinished
+                        reflection.</p>
+                </div>
+            </article>
+            <article class="case-method"><span class="case-method__number">05</span>
+                <div>
+                    <h3>Recognize what the study could and could not establish</h3>
+                    <p>The app changed while the study was underway, so some participants encountered features the team
+                        had not seen when designing the tasks. Long pages also exposed a gap in our moderation plan: we
+                        had not established a consistent point for intervening when someone became stuck.</p>
+                    <p>Recruitment deadlines limited demographic variety. These five sessions provided useful usability
+                        evidence, but the proportions below describe this small sample, not the entire HappierMe
+                        audience. A broader follow-up study would be needed to test the recommendations across age
+                        groups and measure changes after implementation.</p>
+                </div>
+            </article>
+        </section>
+        <section id="findings" class="case-section"><span class="case-section__label">04 / From evidence to
+                decisions</span>
+            <h2>What shaped the direction</h2>
+            <p>Each recommendation was tied to an observed interaction. The counts describe the five-person usability
+                study.</p>
+            <table class="decision-table">
+                <caption>Project observations, responses, and intended benefits</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">What mattered</th>
+                        <th scope="col">The response</th>
+                        <th scope="col">Why it mattered</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th data-label="What mattered" scope="row">4 of 5 participants were unclear about the opening
+                            choices.</th>
+                        <td data-label="The response">Open on a recognizable Home screen with clear topic labels.</td>
+                        <td data-label="Why it mattered">Give people an understandable starting point.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="What mattered" scope="row">5 of 5 expected search to find content across the
+                            app.</th>
+                        <td data-label="The response">Expand search beyond topic modules.</td>
+                        <td data-label="Why it mattered">Match a familiar behavior instead of requiring a new search
+                            model.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="What mattered" scope="row">5 of 5 expected navigation or settings in the
+                            hamburger menu.</th>
+                        <td data-label="The response">Reorganize menu content and move preferences into the profile
+                            area.</td>
+                        <td data-label="Why it mattered">Make the structure more predictable.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="What mattered" scope="row">2 of 5 found guided journaling too long.</th>
+                        <td data-label="The response">Reduce prompts and preserve entered responses.</td>
+                        <td data-label="Why it mattered">Reduce effort and make unfinished reflections easier to resume.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th data-label="What mattered" scope="row">5 of 5 posted to the forum without choosing a topic.
+                        </th>
+                        <td data-label="The response">Make topic selection explicit before submission.</td>
+                        <td data-label="Why it mattered">Improve categorization without preventing expression.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="project-work" class="case-section"><span class="case-section__label">05 / The work</span>
+            <h2>Explore the original work</h2>
+            <p>Read the original research findings and click through the full summer internship presentation. The two
+                viewers keep the research phase and later implementation work distinct.</p>
+            <div data-deck="" aria-label="Usability research findings · 5 pages" aria-roledescription="carousel"
+                role="region" class="slide-deck slide-deck--document">
+                <div class="slide-deck__head">
+                    <h3>Usability research findings · 5 pages</h3>
+                    <p>The original analysis and recommendations, with the participant appendix omitted from this public
+                        portfolio.</p>
+                </div>
+                <div tabindex="0" aria-label="Slide viewer. Use left and right arrow keys to change slides."
+                    class="slide-deck__stage">
+                    <figure data-deck-slide="" data-title="Executive summary"
+                        data-source="../assets/slides/happierme-research/01.webp" data-source-page="2" role="group"
+                        aria-roledescription="slide" aria-label="1 of 5: Executive summary"
+                        class="deck-slide is-current"><a href="../assets/slides/happierme-research/01.webp"
+                            data-deck-enlarge="" aria-label="Enlarge slide: Executive summary"
+                            class="deck-slide__image"><img src="../assets/slides/happierme-research/01.webp"
+                                alt="Executive summary" width="1469" height="1901" loading="lazy" decoding="async"><span
+                                aria-hidden="true" class="zoom-cue">↗</span></a>
+                        <figcaption>Executive summary</figcaption>
+                        <details class="slide-transcript">
+                            <summary>Read slide text</summary>
+                            <p class="slide-transcript__text">Executive Summary
+
+                                In an ever-evolving, digitally-connected world, HappierMe is an application that
+                                presents users with the tools to manage their mental health. This report synthesizes
+                                the findings of five usability tests, with participants within the target demographic
+                                of ages 17-44, conducted on the HappierMe application.
+
+                                Participants followed a series of tasks that were aimed at testing the core
+                                functionality of HappierMe. These tasks included: choosing and exploring a topic of
+                                interest, posting to the forum, writing a journal post, contacting a coach, and signing
+                                up for events.
+
+                                The team’s preliminary findings indicated that users would use the search bar to
+                                search throughout the application and not just topics. Users also had trouble getting
+                                to the homepage from the application open, confusing the topics of interest for the
+                                homepage. In addition, users found large buttons easy to navigate and had trouble
+                                searching through the application for specific functions like events if it were not
+                                accessible through a large button or through search. Users also clicked on the
+                                hamburger menu expecting to find a secondary navigation or preferences, but were
+                                confused to find events and testimonials listed. Furthermore, users had issues
+                                figuring out which topic they were currently viewing, and how they could change the
+                                topic of interest.
+
+                                The team recommends implementing the search bar to search across the application
+                                and not just the topics. To avoid confusion regarding which page or topic the user is
+                                currently viewing, relabeling the dashboard hyperlink to indicate “home” and
+                                rearranging sections on the home page to direct users to the key information they
+                                need in a more precise and concise manner. Including a title at the top of the page to
+                                indicate the current topic users are viewing would also alleviate confusion. The team
+                                also suggests relabeling the “hamburger menu” as preferences or settings, or even
+                                moving all action items into the profile page.</p>
+                        </details>
+                    </figure>
+                    <figure data-deck-slide="" data-title="Study design and usability tasks"
+                        data-source="../assets/slides/happierme-research/02.webp" data-source-page="3" role="group"
+                        aria-roledescription="slide" aria-label="2 of 5: Study design and usability tasks"
+                        class="deck-slide"><a href="../assets/slides/happierme-research/02.webp" data-deck-enlarge=""
+                            aria-label="Enlarge slide: Study design and usability tasks" class="deck-slide__image"><img
+                                src="../assets/slides/happierme-research/02.webp" alt="Study design and usability tasks"
+                                width="1469" height="1901" loading="lazy" decoding="async"><span aria-hidden="true"
+                                class="zoom-cue">↗</span></a>
+                        <figcaption>Study design and usability tasks</figcaption>
+                        <details class="slide-transcript">
+                            <summary>Read slide text</summary>
+                            <p class="slide-transcript__text">Introduction
+
+                                The HappierMe app, created by Human Wisdom, is dedicated to nurturing the
+                                mental health and wellness of individuals between the ages of 17 and 44. It contains
+                                a variety of features, including journaling, speaking to coaches, or perusing a forum,
+                                and exploring topics of interest to better understand and improve one’s own mental
+                                health. To improve efficacy and ensure the application is sustaining its goal of
+                                improving and nurturing users’ mental health journeys, the team conducted five
+                                usability tests within the desired demographic. The team's interest was in examining
+                                how new users approached the core functions of the application. Additionally,
+                                observing how well the application encouraged habit-building and high retention.
+                                Methods
+
+                                The team selected participants based on their lack of experience with HappierMe
+                                and whether they fit the target demographic of ages 17-44, confirmed through
+                                pre-test questions. After the pilot test, the team reworded questions to be more
+                                direct regarding task parameters. The five tests were conducted and recorded via
+                                zoom with seven core tasks. The moderator and participant would be in the same
+                                room, and the participants actions were monitored via laptop camera facing them as
+                                well as their phone activity shared through zoom. If a user did not answer questions
+                                regarding returning to the application as a daily user, and overall ease of navigation
+                                during the task tests, the moderator would prompt them as part of the debrief.
+                                During testing, the rest of the team would take notes in a data-logging spreadsheet,
+                                with one team member in charge of the time.
+
+                                Task Creation
+                                My Daily Practice, Journal Entry, Adding A Forum, Change Pathway
+                                These tasks were created to test the core functionality of HappierMe, as an ideal
+                                user would engage with these practices to create habits. Users were tested on their
+                                ability to locate and walk through modules, successfully write and post entries, or
+                                view topics of their interest.
+                                Sign Up for a Virtual or In-Person Event &amp; Contact A Coach
+                                Through conversations with the client, the team discerned these two actions as
+                                important to the functionality of HappierMe. Users were asked to find coaches and
+                                events and fill out the corresponding forms to test ease of locating these actions and
+                                accessibility.</p>
+                        </details>
+                    </figure>
+                    <figure data-deck-slide="" data-title="Navigation findings and recommendations"
+                        data-source="../assets/slides/happierme-research/03.webp" data-source-page="4" role="group"
+                        aria-roledescription="slide" aria-label="3 of 5: Navigation findings and recommendations"
+                        class="deck-slide"><a href="../assets/slides/happierme-research/03.webp" data-deck-enlarge=""
+                            aria-label="Enlarge slide: Navigation findings and recommendations"
+                            class="deck-slide__image"><img src="../assets/slides/happierme-research/03.webp"
+                                alt="Navigation findings and recommendations" width="1469" height="1901" loading="lazy"
+                                decoding="async"><span aria-hidden="true" class="zoom-cue">↗</span></a>
+                        <figcaption>Navigation findings and recommendations</figcaption>
+                        <details class="slide-transcript">
+                            <summary>Read slide text</summary>
+                            <p class="slide-transcript__text">Findings and Recommendations
+                                Summary Results
+
+                                In this usability assessment of the HappierMe app, key findings on the home page
+                                revealed user disorientation due to the app not defaulting to a clear Home screen,
+                                difficulties in navigating and selecting topics of interest, and a mismatch between
+                                user expectations and the actual function of the hamburger menu, indicating a need
+                                for improved initial navigation, clearer content organization, and a more intuitive
+                                menu design. Participants also encountered difficulty using the search bar,
+                                indicating an ineffective search engine algorithm. Challenges in locating buttons for
+                                key user flows, navigating the Events page, completing guided journal activities and
+                                posting in the forum under the appropriate thread category were also noted.
+
+                                Key Findings &amp; Recommendations
+
+                                Home Screen
+
+                                80% of the participants were confused by the prompts “continue where you left off”
+                                and “select a new topic” on launch of HappierMe, because they did not present a
+                                clear starting point for users, unlike the Home button, which participants preferred
+                                as it served as an anchor point for navigation. Participant 2 stated on opening of the
+                                application, "I really don't know what to press,” highlighting the sense of being stuck
+                                on an unclear screen. The team recommends that the HappierMe app be configured
+                                to default to the Home screen upon startup. Further enhancing user experience, the
+                                option to remain logged in could be provided to facilitate quicker and more efficient
+                                access to the app's main features.
+
+                                Users struggled to alter their 'Topic of Choice’ and used the search bar to locate
+                                topics such as "work and leadership," instead of locating the module. Positioning the
+                                Topics above "Feel Better Now" area could improve usability by directly drawing
+                                attention to the module. The severity of this issue is rooted in the restrictions it has
+                                on users' ability to uncover and customize content, which is critical to the
+                                HappierMe experience.
+
+                                The hamburger menu, a common element typically used for additional navigation
+                                options, led to misconceptions among the usability participants. All 5 participants
+                                clicked on this menu with the expectation of finding tools to help them navigate the
+                                app but instead encountered content such as events and testimonials, unrelated to
+                                direct navigation or personal settings, producing a moderate severity level because
+                                it impacts the overall efficiency of navigation. To reconcile user expectations, we
+                                recommend repurposing the hamburger menu to strictly contain settings and help</p>
+                        </details>
+                    </figure>
+                    <figure data-deck-slide="" data-title="Search, events, forum, and journaling findings"
+                        data-source="../assets/slides/happierme-research/04.webp" data-source-page="5" role="group"
+                        aria-roledescription="slide" aria-label="4 of 5: Search, events, forum, and journaling findings"
+                        class="deck-slide"><a href="../assets/slides/happierme-research/04.webp" data-deck-enlarge=""
+                            aria-label="Enlarge slide: Search, events, forum, and journaling findings"
+                            class="deck-slide__image"><img src="../assets/slides/happierme-research/04.webp"
+                                alt="Search, events, forum, and journaling findings" width="1469" height="1901"
+                                loading="lazy" decoding="async"><span aria-hidden="true" class="zoom-cue">↗</span></a>
+                        <figcaption>Search, events, forum, and journaling findings</figcaption>
+                        <details class="slide-transcript">
+                            <summary>Read slide text</summary>
+                            <p class="slide-transcript__text">options within the user's profile to further streamline
+                                navigation.
+
+                                Search Bar
+
+                                All five participants attempted to utilize the search bar to find events and the
+                                happiness survey. However, the search bar did not function as expected, as users
+                                expected to be able to search the app entirely and not just topics. This discrepancy
+                                hindered users' ability to find the desired content efficiently. Addressing this issue
+                                is
+                                critical for HappierMe’s success, as highlighted by one of our participants who
+                                remarked, “usually when I don't know anything, I always go to the search bar." To
+                                address this issue we recommend the search function to search across the apps and
+                                not just within topics.
+
+
+                                Explore Page
+
+                                Participants encountered challenges in locating certain modules and buttons on the
+                                explore page, such as the “Events” button, primarily due to their small size. Larger
+                                buttons, such as "Find a Coach," were found to be more easily recognizable.
+                                Additionally, the “Events” page displays both past and upcoming events and one user
+                                out of five selected an event that had already passed, inadvertently attempting to
+                                register for it. While the discrepancy between larger and smaller buttons stands out
+                                as a critical issue, challenges with the “Events” page are comparatively less severe.
+                                Our recommendation is to increase the size of buttons for key user user pathways
+                                such as “Events” which will improve users’ ability to navigate and engage with the
+                                application.
+
+                                Forum &amp; Journal
+
+                                On the Forum page, it was noted that none of the five participants clicked the
+                                dropdown and selected a topic when creating a new post. However, since all five
+                                participants successfully completed the task, this usability issue is deemed to be of
+                                low severity. Additionally, 2 out of 5 participants said the guided journal activity was
+                                lengthy. Participants expressed frustration over the number of steps involved in the
+                                process and expressed a desire to quit the process prematurely, signaling a
+                                moderate usability challenge that warrants further attention.
+
+                                To address the Forum issue, the team suggests making topic selection mandatory
+                                and implementing an alert when they attempt to submit the forum post without a
+                                topic selected. Regarding the Journal feature, the team’s recommendation is to
+                                decrease the number of prompts in the guided journal process to a number
+                                comparable to the Apple Journal, which is performing well amongst Apple users.
+                                Allowing users to retain their responses when revisiting guided questions would
+                                enhance the user engagement as well. By implementing these recommendations, the</p>
+                        </details>
+                    </figure>
+                    <figure data-deck-slide="" data-title="Limitations and research conclusions"
+                        data-source="../assets/slides/happierme-research/05.webp" data-source-page="6" role="group"
+                        aria-roledescription="slide" aria-label="5 of 5: Limitations and research conclusions"
+                        class="deck-slide"><a href="../assets/slides/happierme-research/05.webp" data-deck-enlarge=""
+                            aria-label="Enlarge slide: Limitations and research conclusions"
+                            class="deck-slide__image"><img src="../assets/slides/happierme-research/05.webp"
+                                alt="Limitations and research conclusions" width="1469" height="1901" loading="lazy"
+                                decoding="async"><span aria-hidden="true" class="zoom-cue">↗</span></a>
+                        <figcaption>Limitations and research conclusions</figcaption>
+                        <details class="slide-transcript">
+                            <summary>Read slide text</summary>
+                            <p class="slide-transcript__text">application can better meet the needs of its user base and
+                                enhance the overall
+                                usability.
+                                Discussion
+                                Throughout the usability testing process, the team encountered several
+                                challenges, which affected some results. One significant challenge revolved around
+                                rapid iterations within the application. The continuous updates caused participants
+                                to engage with new features, which moderators had not observed while structuring
+                                tasks. This problem led to another challenge which was the team not having an
+                                established point of intervention. Since the application contained long pages of
+                                content, participants tended to spend extended amounts of time finding the task to
+                                complete, making it difficult for the team to identify an appropriate time to redirect
+                                participants onto the right path, thereby preventing extended time on a single task.
+                                The final limitation during this session was most participants were in the same age
+                                range. Due to a tight recruiting and testing deadline, the team was unable to find
+                                participants with a diverse demographic. For future tests, it is essential to discuss
+                                recruiting methods to ensure that everyone from the target audience is being
+                                represented, which will lead to obtaining more diverse insights.
+                                Conclusion
+                                The usability assessments for HappierMe enabled the team to identify several
+                                key insights such as unintuitive navigation, unclear direction for topic selection,
+                                disorientation on the home page, and lengthy modules to complete. Based on the
+                                insights, the team provided recommendations to address these challenges which
+                                will enhance the usability and customer satisfaction, such as reconfiguring the
+                                hamburger menu into settings and ensuring clear navigation. Further steps include
+                                delivering the recommendations to the client and explaining the insights from the
+                                usability tests categorizing them by severity level.</p>
+                        </details>
+                    </figure>
+                </div>
+                <div data-deck-controls="" hidden="hidden" class="slide-controls"><button type="button"
+                        data-deck-prev="" class="slide-button">← Previous</button><span data-deck-count=""
+                        aria-live="polite" aria-atomic="true" class="slide-count">1 / 5</span><button type="button"
+                        data-deck-next="" class="slide-button">Next →</button></div>
+                <div data-deck-thumbs="" aria-label="Choose a slide" hidden="hidden" class="slide-thumbnails"><button
+                        type="button" data-deck-goto="0" aria-label="Go to slide 1: Executive summary"
+                        title="Executive summary" class="slide-thumbnail"><img
+                            src="../assets/slides/happierme-research/01.webp" alt="" loading="lazy" width="120"
+                            height="68"><span>1</span></button><button type="button" data-deck-goto="1"
+                        aria-label="Go to slide 2: Study design and usability tasks"
+                        title="Study design and usability tasks" class="slide-thumbnail"><img
+                            src="../assets/slides/happierme-research/02.webp" alt="" loading="lazy" width="120"
+                            height="68"><span>2</span></button><button type="button" data-deck-goto="2"
+                        aria-label="Go to slide 3: Navigation findings and recommendations"
+                        title="Navigation findings and recommendations" class="slide-thumbnail"><img
+                            src="../assets/slides/happierme-research/03.webp" alt="" loading="lazy" width="120"
+                            height="68"><span>3</span></button><button type="button" data-deck-goto="3"
+                        aria-label="Go to slide 4: Search, events, forum, and journaling findings"
+                        title="Search, events, forum, and journaling findings" class="slide-thumbnail"><img
+                            src="../assets/slides/happierme-research/04.webp" alt="" loading="lazy" width="120"
+                            height="68"><span>4</span></button><button type="button" data-deck-goto="4"
+                        aria-label="Go to slide 5: Limitations and research conclusions"
+                        title="Limitations and research conclusions" class="slide-thumbnail"><img
+                            src="../assets/slides/happierme-research/05.webp" alt="" loading="lazy" width="120"
+                            height="68"><span>5</span></button></div>
+                <div class="slide-deck__footer"><span>Use the arrows, thumbnails, or swipe to browse. Select a slide to
+                        enlarge it.</span><a href="../assets/downloads/HappierMe-Research-Findings.pdf" target="_blank"
+                        rel="noopener noreferrer" class="text-link">Open original PDF ↗</a></div>
+            </div>
+
+            <div data-deck-controls="" hidden="hidden" class="slide-controls"><button type="button" data-deck-prev=""
+                    class="slide-button">← Previous</button><span data-deck-count="" aria-live="polite"
+                    aria-atomic="true" class="slide-count">1 / 9</span><button type="button" data-deck-next=""
+                    class="slide-button">Next →</button></div>
+            <div data-deck-thumbs="" aria-label="Choose a slide" hidden="hidden" class="slide-thumbnails"><button
+                    type="button" data-deck-goto="0" aria-label="Go to slide 1: Introducing the internship"
+                    title="Introducing the internship" class="slide-thumbnail"><img
+                        src="../assets/slides/happierme-internship/01.webp" alt="" loading="lazy" width="120"
+                        height="68"><span>1</span></button><button type="button" data-deck-goto="1"
+                    aria-label="Go to slide 2: About HappierMe" title="About HappierMe" class="slide-thumbnail"><img
+                        src="../assets/slides/happierme-internship/02.webp" alt="" loading="lazy" width="120"
+                        height="68"><span>2</span></button><button type="button" data-deck-goto="2"
+                    aria-label="Go to slide 3: My role and weekly responsibilities"
+                    title="My role and weekly responsibilities" class="slide-thumbnail"><img
+                        src="../assets/slides/happierme-internship/03.webp" alt="" loading="lazy" width="120"
+                        height="68"><span>3</span></button><button type="button" data-deck-goto="3"
+                    aria-label="Go to slide 4: Key accomplishments" title="Key accomplishments"
+                    class="slide-thumbnail"><img src="../assets/slides/happierme-internship/04.webp" alt=""
+                        loading="lazy" width="120" height="68"><span>4</span></button><button type="button"
+                    data-deck-goto="4" aria-label="Go to slide 5: Working and learning as an intern"
+                    title="Working and learning as an intern" class="slide-thumbnail"><img
+                        src="../assets/slides/happierme-internship/05.webp" alt="" loading="lazy" width="120"
+                        height="68"><span>5</span></button><button type="button" data-deck-goto="5"
+                    aria-label="Go to slide 6: Impact and future direction" title="Impact and future direction"
+                    class="slide-thumbnail"><img src="../assets/slides/happierme-internship/06.webp" alt=""
+                        loading="lazy" width="120" height="68"><span>6</span></button><button type="button"
+                    data-deck-goto="6" aria-label="Go to slide 7: Feature development and product screens"
+                    title="Feature development and product screens" class="slide-thumbnail"><img
+                        src="../assets/slides/happierme-internship/07.webp" alt="" loading="lazy" width="120"
+                        height="68"><span>7</span></button><button type="button" data-deck-goto="7"
+                    aria-label="Go to slide 8: Ambassador program and marketing strategy"
+                    title="Ambassador program and marketing strategy" class="slide-thumbnail"><img
+                        src="../assets/slides/happierme-internship/08.webp" alt="" loading="lazy" width="120"
+                        height="68"><span>8</span></button><button type="button" data-deck-goto="8"
+                    aria-label="Go to slide 9: Closing and presentation credits"
+                    title="Closing and presentation credits" class="slide-thumbnail"><img
+                        src="../assets/slides/happierme-internship/09.webp" alt="" loading="lazy" width="120"
+                        height="68"><span>9</span></button></div>
+            <div class="slide-deck__footer"><span>Use the arrows, thumbnails, or swipe to browse. Select a slide to
+                    enlarge it.</span><a href="../assets/downloads/Summer-2024-Internship-Presentation.pdf"
+                    target="_blank" rel="noopener noreferrer" class="text-link">Open original PDF ↗</a></div>
+            </div>
+            <h3>A closer look at the visuals</h3>
+            <div class="artifact-gallery">
+                <figure class="artifact"><a href="../assets/work/ambassador-screen-7-1.webp" data-lightbox=""
+                        data-caption="Mood check-in interface." aria-label="Enlarge: Mood check-in interface."><img
+                            src="../assets/work/ambassador-screen-7-1.webp" alt="Mood check-in interface."
+                            loading="lazy" decoding="async" width="1284" height="1546"><span class="zoom-cue"
+                            aria-hidden="true">↗</span></a>
+                    <figcaption>Mood check-in interface.</figcaption>
+                </figure>
+                <figure class="artifact"><a href="../assets/work/ambassador-screen-7-2.webp" data-lightbox=""
+                        data-caption="Guided journal interface." aria-label="Enlarge: Guided journal interface."><img
+                            src="../assets/work/ambassador-screen-7-2.webp" alt="Guided journal interface."
+                            loading="lazy" decoding="async" width="832" height="1800"><span class="zoom-cue"
+                            aria-hidden="true">↗</span></a>
+                    <figcaption>Guided journal interface.</figcaption>
+                </figure>
+                <figure class="artifact"><a href="../assets/work/ambassador-screen-7-3.webp" data-lightbox=""
+                        data-caption="HappierMe home and content discovery."
+                        aria-label="Enlarge: HappierMe home and content discovery."><img
+                            src="../assets/work/ambassador-screen-7-3.webp" alt="HappierMe home and content discovery."
+                            loading="lazy" decoding="async" width="832" height="1800"><span class="zoom-cue"
+                            aria-hidden="true">↗</span></a>
+                    <figcaption>HappierMe home and content discovery.</figcaption>
+                </figure>
+                <figure class="artifact"><a href="../assets/work/ambassador-screen-7-5.webp" data-lightbox=""
+                        data-caption="Work and leadership content pathway."
+                        aria-label="Enlarge: Work and leadership content pathway."><img
+                            src="../assets/work/ambassador-screen-7-5.webp" alt="Work and leadership content pathway."
+                            loading="lazy" decoding="async" width="832" height="1800"><span class="zoom-cue"
+                            aria-hidden="true">↗</span></a>
+                    <figcaption>Work and leadership content pathway.</figcaption>
+                </figure>
+            </div>
+            <div class="case-resources"><a class="btn btn--dark"
+                    href="../assets/downloads/HappierMe-Research-Findings.pdf" target="_blank"
+                    rel="noopener noreferrer">Read the research findings (PDF) ↗</a></div>
+        </section>
+        <section id="results" class="case-section"><span class="case-section__label">06 / Outcomes</span>
+            <h2>What the work achieved</h2>
+            <p>The graduate project delivered an interaction map, research synthesis, usability findings, and
+                prioritized recommendations covering onboarding, navigation, search, events, forum behavior, and
+                journaling. The outcome was a specific improvement agenda for the client rather than a generalized
+                request to make the app easier to use.</p>
+            <p>During the later summer internship, I conducted and analyzed additional usability work that contributed
+                to <strong>Daily Check-In and Wellness Score improvements</strong>, as documented in my internship
+                presentation. Those subsequent product contributions are shown in a separate slide viewer below. The
+                original graduate study did not measure a post-release increase in retention or conversion.</p>
+        </section>
+        <section id="reflection" class="case-section"><span class="case-section__label">07 / Reflection</span>
+            <h2>What I would carry forward</h2>
+            <p>The clearest lesson was that interface conventions are part of a user’s starting knowledge. When a search
+                bar or menu behaves differently from what people expect, the product asks them to relearn something
+                before they can benefit from the content.</p>
+            <p>On a future study, I would agree on intervention rules earlier, record the product version used in each
+                session, and recruit a wider age range. Those changes would make comparisons more consistent and help
+                distinguish a stable usability issue from a feature that changed during testing.</p>
+            <div class="case-next"><a href="../work.html" class="text-link">← All work</a><a
+                    href="../index.html#contact" class="text-link">Let’s talk about this work →</a></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <span>Designed &amp; built by Marlena Branham · 2026</span>
+            <div class="footer__links">
+                <a href="mailto:branhama@umich.edu">Email</a><a href="https://www.linkedin.com/in/marlenariellee/"
+                    target="_blank" rel="noopener noreferrer">LinkedIn</a><a
+                    href="https://www.instagram.com/marlenariellee/" target="_blank"
+                    rel="noopener noreferrer">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
